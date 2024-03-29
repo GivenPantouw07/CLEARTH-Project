@@ -1,22 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./Logo_Clearth.svg";
+import earth from "./earth.png";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <div className="navbar">
+        <div className="logo">
+          <img src={logo} alt="Logo" />
+        </div>
+        <h1 className="clearth">LEARTH</h1>
+        <div className="menu">
+          <button>
+            <a href="#">LOGIN</a>
+          </button>
+        </div>
+      </div>
+      <header>
+        <div className="isi">
+          <h1 className="bigfont">CLEARTH</h1>
+          <p>START YOUR CLEARTH JOURNEY</p>
+          <button className="get-started-btn">
+            <a href="#">GET STARTED</a>
+          </button>
+        </div>
+        <img src={earth} alt="earth1" className="earth" />
       </header>
     </div>
   );

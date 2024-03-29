@@ -1,38 +1,121 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fbfa;
+  padding: 10px;
+  height: 60px;
+}
+
+.clearth {
+  margin-right: 1005px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-left: 29px;
+  margin-top: 3px;
+}
+
+.menu button {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 150px;
+  margin-right: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #00704b;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: #f8fbfa;
+  height: calc(100vh - 60px);
+  height: 695px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.isi p {
+  font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.isi {
+  margin-right: 800px;
+  margin-bottom: 240px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.isi > h1 {
+  font-size: 100px;
+  margin-bottom: 35px;
+  background: linear-gradient(210deg, rgb(102, 97, 97), #87ceeb, #87ae73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px rgba(63, 63, 60, 0.1);
+}
+
+.earth {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  width: 90%;
+  z-index: 1;
+}
+
+.get-started-btn {
+  font-family: "Montserrat", sans-serif;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 10;
+  background-color: #00704b;
   color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: #cccccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu button {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  header {
+    padding: 10px;
   }
 }
