@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
 
+/* THIS IS THE LANDING PAGE CSS */
+
 html {
   box-sizing: border-box;
 }
@@ -146,4 +148,58 @@ a {
     border-radius: 5px;
     cursor: pointer;
   }
+}
+
+/* LOGIN PAGE */
+
+.card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+a {
+  color: blue;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00704b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
